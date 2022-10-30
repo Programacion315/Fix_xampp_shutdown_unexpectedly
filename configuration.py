@@ -1,5 +1,0 @@
-location = "C:\\Users\Luis\\Desktop\\Prueba"
-path_data = "C:\\Users\Luis\\Desktop\\Prueba\\data"
-path_data_old = "C:\\Users\Luis\\Desktop\\Prueba\\data_old"
-backup = "C:\\Users\Luis\\Desktop\\Prueba\\backup"
-ibdata1 = "C:\\Users\Luis\\Desktop\\Prueba\\data_old\\ibdata1"
