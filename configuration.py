@@ -1,0 +1,5 @@
+location = "C:\\xampp\\mysql"
+path_data = location + "\\data"
+path_data_old = location + "\\data_old"
+backup = location + "\\backup"
+ibdata1 = location + "\\data_old\\ibdata1"
