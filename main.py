@@ -14,16 +14,16 @@ shutil.copytree(os.path.join(location, "backup"), os.path.join(location, "data")
 
 # Copy all the folders of your databases data from mysql/data_old to mysql/data
 # Don't copy the folders myql, peroformance_schema, phpmyadmin 
+
+# Cannot create a file that already exists !
 for element in os.listdir(path_data_old):
     f = os.path.join(path_data_old, element)
-    # checking if it is a file
-    if os.path.isdir(f) == True and element != 'mysql' and element != 'performance_schema' and element != 'phpmyadmin':
-        print(f)
+    if os.path.isdir(f) == True and element != 'mysql' and element != 'performance_schema' and element != 'phpmyadmin' and element != 'test':
         print(element)
-        # shutil.copytree(os.path.join(element), os.path.join(location, "data"))
-
+        shutil.copytree(os.path.join(path_data_old, element), os.path.join(path_data, element))
 # Finally copy the file ibdata1 from data_old to data
 shutil.copy(ibdata1, path_data)
+print("Success!!!")
 
 
 
